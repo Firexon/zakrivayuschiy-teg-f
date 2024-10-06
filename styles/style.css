@@ -70,6 +70,10 @@
   gap: 0.5em;
 }
 
+button {
+  cursor: pointer;
+}
+
 .theme-menu__button {
   font-size: 14px;
   text-transform: uppercase;
@@ -458,7 +462,7 @@ dialog::backdrop {
 }
 
 @media (width <= 376px) {
-  
+
   .title {
     margin: 35% 0 20px;
   }

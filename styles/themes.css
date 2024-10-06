@@ -21,7 +21,6 @@
   --heart-contour-color: #000000;
   --heart-accent-color: red;
 }
-/*остальные прописать*/
 
 @media (prefers-color-scheme: light) {
 
@@ -41,8 +40,6 @@
     --heart-contour-color: #000000;
     --heart-accent-color: red;
   }
-
-  /*остальные прописать*/
 }
 
 :root.theme-dark {
@@ -61,10 +58,9 @@
   --heart-contour-color: #00cc14;
   --heart-accent-color: red;
 }
-/*остальные прописать*/
 
 @media (prefers-color-scheme: dark) {
-  
+
   :root {
     --main-font: 'Inter';
     --accent-font: 'PressStart2P';
@@ -81,6 +77,4 @@
     --heart-contour-color: #00cc14;
     --heart-accent-color: red;
   }
-
-  /*остальные прописать*/
 }
