@@ -26,7 +26,6 @@
 @media (prefers-color-scheme: light) {
 
   :root {
-
     --main-font: 'Inter';
     --accent-font: 'PressStart2P';
     --main-font-weight: 400;

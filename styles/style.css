@@ -458,7 +458,7 @@ dialog::backdrop {
 }
 
 @media (width <= 376px) {
-
+  
   .title {
     margin: 35% 0 20px;
   }
