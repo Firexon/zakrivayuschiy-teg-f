@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <link rel="icon" href="/images/favicon.ico" sizes="any">
+    <link rel="icon" href="/images/favicon.ico" sizes="any" />
     <link rel="icon" href="/svg/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/images/favicon.png"> 
+    <link rel="apple-touch-icon" href="/images/favicon.png" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -18,8 +18,8 @@
   </head>
   <body class="page">
     <header class="header content-width">
-      <h1 class="title">&lt;/HTML&gt;</h1>
-      <p class="header-text">закрывающий тег</p>
+      <a class="title-link"><h1 class="title">&lt;/HTML&gt;</h1></a>
+      <h1 class="header-text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,17 +48,17 @@
     </header>
 
     <main class="main content-width">
-      <section class="content-card">
-        <h3 class="card-title">
+      <article class="content-card">
+        <h2 class="card-title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
+        </h2>
 
         <div class="img-container">
           <p class="label">&lt;/вдохновение&gt;</p>
           <img
             src="/images/floor.jpg"
             alt="щенок лежит на полу"
-            class="img-floor"
+            class="filter-blur"
           />
         </div>
 
@@ -74,13 +74,14 @@
         </div>
 
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="39"
+              width="38"
               height="36"
               fill="none"
               class="like-icon"
+              aria-hidden="true"
             >
               <g class="heart">
                 <path
@@ -107,13 +108,13 @@
             </svg>
           </button>
 
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="content-card">
+      <article class="content-card">
         <h3 class="card-title">1 спринт: Я — чистый лист</h3>
 
         <div class="img-container">
@@ -121,7 +122,7 @@
           <img
             src="/images/jump.jpg"
             alt="щенок прыгает на колени"
-            class="img-jump"
+            class="filter-invert-redish"
           />
         </div>
 
@@ -139,7 +140,7 @@
         </div>
 
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -172,13 +173,13 @@
             </svg>
           </button>
 
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="content-card">
+      <article class="content-card">
         <h3 class="card-title">1 спринт: А если не получится?</h3>
 
         <div class="img-container">
@@ -186,7 +187,7 @@
           <img
             src="/images/jacket.jpg"
             alt="щенок спит на кофте"
-            class="img-jacket"
+            class="filter-dark-low-contrast"
           />
         </div>
 
@@ -202,7 +203,7 @@
         </div>
 
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -234,20 +235,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="content-card">
+      <article class="content-card">
         <h3 class="card-title">2 спринт: Погоня за идеалом</h3>
         <div class="img-container">
           <p class="label">упрямство</p>
           <img
             src="/images/trolley.jpg"
             alt="щеное сидит в тележке супермаркета"
-            class="img-trolley"
+            class="filter-pinkish"
           />
         </div>
         <div class="text-block">
@@ -263,7 +264,7 @@
           </p>
         </div>
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -295,20 +296,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="content-card">
+      <article class="content-card">
         <h3 class="card-title">2 спринт: О тех, кто рядом</h3>
         <div class="img-container">
           <p class="label">поддержка</p>
           <img
             src="/images/gelato.jpg"
             alt="собака смотрит на рожок мороженого"
-            class="img-gelato"
+            class="filter-sepia"
           />
         </div>
         <div class="text-block">
@@ -325,7 +326,7 @@
           </p>
         </div>
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -357,20 +358,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
 
-      <section class="content-card">
+      <article class="content-card">
         <h3 class="card-title">3 спринт: Обходные стратегии</h3>
         <div class="img-container">
           <p class="label">спасибо google</p>
           <img
             src="/images/car-window.jpg"
             alt="собака смотрит в окно в машине"
-            class="img-car-window"
+            class="filter-total-grayscale"
           />
         </div>
         <div class="text-block">
@@ -384,7 +385,7 @@
           </p>
         </div>
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -416,19 +417,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="content-card">
+      </article>
+
+      <article class="content-card">
         <h3 class="card-title">3 спринт: Когда опускаются руки</h3>
         <div class="img-container">
           <p class="label">налейте вина</p>
           <img
             src="/images/teddy-bear.jpg"
             alt="собака сидит рядом с мягкой игрушкой"
-            class="img-teddy-bear"
+            class="filter-half-grayscale"
           />
         </div>
         <div class="text-block">
@@ -444,7 +446,7 @@
           </p>
         </div>
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -476,19 +478,20 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="content-card">
+      </article>
+
+      <article class="content-card">
         <h3 class="card-title">«Сейчас я здесь»</h3>
         <div class="img-container">
           <p class="label">я это сделала</p>
           <img
             src="/images/pollo.jpg"
             alt="собака спит на игрушечной курице"
-            class="img-pollo"
+            class="filter-saturate"
           />
         </div>
         <div class="text-block">
@@ -506,7 +509,7 @@
           </p>
         </div>
         <div class="block-like">
-          <button class="card__icon-button">
+          <button class="card__icon-button" type="button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -539,11 +542,12 @@
             </svg>
           </button>
 
-          <button class="card__like-button button-decoration">
+          <button class="card__like-button button-decoration" type="button">
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
+      </article>
+
       <button
         class="button-save button-decoration"
         type="button"
@@ -553,9 +557,7 @@
         <svg viewBox="0 0 39 39" width="21" height="21" class="floopy-svg">
           <use href="./svg/floppy.svg#floopy-svg"></use>
         </svg>
-        <span class="button__text">
-          Сохранить на память
-        </span>
+        <span class="button__text"> Сохранить на память </span>
       </button>
 
       <dialog id="dialog-id" class="pop-up">
@@ -565,11 +567,11 @@
 
         <p class="pop-up_text">Вставьте дискету, чтобы продолжить</p>
         <button
-          class="pop-up_button close"
+          class="pop-up_button close button-decoration"
           type="button"
           onclick="window['dialog-id'].close();"
         >
-          ок
+          <span class="button__text"> ок </span>
         </button>
       </dialog>
     </main>

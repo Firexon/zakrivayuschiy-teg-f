@@ -6,8 +6,19 @@
   --main-font-weight: 400;
   --card-name-weight: 700;
   --bg-color: rgb(255, 255, 255);
-  --bg-img: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(#d3d3d3, transparent 2px),
+  --bg-img: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --accent-color: rgb(0, 0, 0);
   --content-width: clamp(375px, 50%, 700px);

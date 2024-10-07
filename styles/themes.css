@@ -6,13 +6,22 @@
 */
 
 :root.theme-light {
-  --main-font: 'Inter';
-  --accent-font: 'PressStart2P';
   --main-font-weight: 400;
   --card-name-weight: 700;
   --bg-color: rgb(255, 255, 255);
-  --bg-img: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-    repeating-linear-gradient(#d3d3d3, transparent 2px),
+  --bg-img: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --accent-color: rgb(0, 0, 0);
   --content-width: clamp(375px, 50%, 700px);
@@ -22,34 +31,23 @@
   --heart-accent-color: red;
 }
 
-@media (prefers-color-scheme: light) {
-
-  :root {
-    --main-font: 'Inter';
-    --accent-font: 'PressStart2P';
-    --main-font-weight: 400;
-    --card-name-weight: 700;
-    --bg-color: rgb(255, 255, 255);
-    --bg-img: repeating-linear-gradient(90deg, #d3d3d3, transparent 2px),
-      repeating-linear-gradient(#d3d3d3, transparent 2px),
-      linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --accent-color: rgb(0, 0, 0);
-    --content-width: clamp(375px, 50%, 700px);
-    --lable-border-color: #fff;
-    --button-text-color: #fff;
-    --heart-contour-color: #000000;
-    --heart-accent-color: red;
-  }
-}
-
 :root.theme-dark {
-  --main-font: 'Inter';
-  --accent-font: 'PressStart2P';
   --main-font-weight: 465;
   --card-name-weight: 785;
   --bg-color: rgb(0, 0, 0);
-  --bg-img: repeating-linear-gradient(90deg, #000, transparent 2px),
-    repeating-linear-gradient(#000, transparent 2px),
+  --bg-img: repeating-linear-gradient(
+      90deg,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
     linear-gradient(#007f0c, #004306);
   --accent-color: rgb(0, 204, 20);
   --content-width: clamp(375px, 50%, 700px);
@@ -60,15 +58,24 @@
 }
 
 @media (prefers-color-scheme: dark) {
-
+  
   :root {
-    --main-font: 'Inter';
-    --accent-font: 'PressStart2P';
     --main-font-weight: 465;
     --card-name-weight: 785;
     --bg-color: rgb(0, 0, 0);
-    --bg-img: repeating-linear-gradient(90deg, #000, transparent 2px),
-      repeating-linear-gradient(#000, transparent 2px),
+    --bg-img: repeating-linear-gradient(
+        90deg,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
       linear-gradient(#007f0c, #004306);
     --accent-color: rgb(0, 204, 20);
     --content-width: clamp(375px, 50%, 700px);
